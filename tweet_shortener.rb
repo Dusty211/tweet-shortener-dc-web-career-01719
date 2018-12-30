@@ -38,6 +38,7 @@ def selective_tweet_shortener(tweet)
   tweet.split.join('').split('').length < 130 ? tweet : bulk_tweet_shortener(tweet)
 end
 
+selective_tweet_shortener(tweet)
 
 def shortened_tweet_truncator(tweet)
 end
