@@ -16,11 +16,10 @@ def dictionary
   
 end
 
-test_tweet = "I'm running out of example tweets for you guys, which is weird, because I'm a writer and this is just writing and I tweet all day. For real, you guys. For real."
+#test_tweet = "I'm running out of example tweets for you guys, which is weird, because I'm a writer and this is just writing and I tweet all day. For real, you guys. For real."
 
 def word_substituter(tweet)
   tweet_a = tweet.split
-  puts tweet_a
   tweet_a.each_with_index do |word, index|
     tweet_a[index] = dictionary[word] if dictionary.keys.find {|key| key == word}
     tweet_a[index] = dictionary[word.capitalize] if dictionary.keys.find {|key| key.capitalize == word}
@@ -28,7 +27,7 @@ def word_substituter(tweet)
   tweet_a.join(" ")
 end
 
-puts word_substituter(test_tweet)
+#puts word_substituter(test_tweet)
 
 def bulk_tweet_shortener(tweets)
   tweets.each do |tweet|
