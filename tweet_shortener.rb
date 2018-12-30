@@ -20,6 +20,7 @@ test_tweet = "I'm running out of example tweets for you guys, which is weird, be
 
 def word_substituter(tweet)
   tweet_a = tweet.split
+  puts tweet_a
   tweet_a.each_with_index do |word, index|
     tweet_a[index] = dictionary[word] if dictionary.keys.find {|key| key == word}
   end
