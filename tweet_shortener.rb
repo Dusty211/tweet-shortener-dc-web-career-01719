@@ -19,7 +19,7 @@ end
 def word_substituter(tweet)
   tweet_a = tweet.to_a
   tweet_a.each_with_index do |word, index|
-    tweet_a[index] = dictionary[word] if 
+    tweet_a[index] = dictionary[word] if true
   end
   #dictionary[wrd]
 end
