@@ -1,5 +1,5 @@
 
-def dictionary(tweet)
+def dictionary
   
   dictionary_hash = {
     "hello" => 'hi',
