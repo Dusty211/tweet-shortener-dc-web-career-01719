@@ -24,6 +24,9 @@ def word_substituter(tweet)
     if dictionary.keys.find {|key| key == word} do
       tweet_a[index] = dictionary[word]
     end
+    if dictionary.keys.find {|key| key.capitalize == word} do
+      tweet_a[index] = dictionary[word]
+    end
     #tweet_a[index] = dictionary[word] if dictionary.keys.find {|key| key == word}
     #tweet_a[index] = dictionary[word] if dictionary.keys.find {|key| key.capitalize == word}
   end
