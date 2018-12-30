@@ -16,7 +16,8 @@ def dictionary
   
 end
 
-def word_substituter(tweet)
+def word_substituter(word)
+  dictionary[word]
 end
 
 def bulk_tweet_shortener(tweets)
@@ -27,4 +28,4 @@ end
 
 def shortened_tweet_truncator(tweet)
 end
-puts dictionary["hello"]
+#puts dictionary["hello"]
