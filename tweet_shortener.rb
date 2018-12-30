@@ -23,7 +23,7 @@ def word_substituter(tweet)
   end
   #dictionary[wrd]
 end
-
+puts dictionary.keys.class
 def bulk_tweet_shortener(tweets)
 end
 
