@@ -1,6 +1,9 @@
 
 def dictionary(tweet)
-  
+  dictionary_hash = {
+    "hello" => 'hi',
+    "to" => '2',
+  }
 end
 
 def word_substituter(tweet)
