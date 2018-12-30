@@ -14,7 +14,6 @@ def dictionary(tweet)
     "and" => '&'
   }
   
-  
 end
 
 def word_substituter(tweet)
