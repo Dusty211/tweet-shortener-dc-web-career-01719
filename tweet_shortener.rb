@@ -17,11 +17,11 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  tweet_a = tweet.split(' ')
+  tweet_a = tweet.split
   tweet_a.each_with_index do |word, index|
     tweet_a[index] = dictionary[word] if dictionary.keys.find {|key| key == word}
   end
-  tweet_a.to_s
+  tweet_a.join(" ")
   #dictionary[wrd]
 end
 
