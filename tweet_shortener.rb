@@ -16,6 +16,8 @@ def dictionary
   
 end
 
+test_tweet = "I'm running out of example tweets for you guys, which is weird, because I'm a writer and this is just writing and I tweet all day. For real, you guys. For real."
+
 def word_substituter(tweet)
   tweet_a = tweet.split
   tweet_a.each_with_index do |word, index|
