@@ -26,6 +26,8 @@ def word_substituter(tweet)
   tweet_a.join(" ")
 end
 
+puts word_substituter(test_tweet)
+
 def bulk_tweet_shortener(tweets)
   tweets.each do |tweet|
     puts word_substituter(tweet)
