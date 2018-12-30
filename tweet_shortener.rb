@@ -35,7 +35,7 @@ end
 
 def selective_tweet_shortener(tweet)
   #tweet.split('').length < 140 ? tweet : bulk_tweet_shortener(tweet)
-  tweet.length < 130 ? tweet : word_substituter(tweet)
+  tweet.length < 140 ? tweet : word_substituter(tweet)
 end
 
 #puts selective_tweet_shortener(test_tweet)
