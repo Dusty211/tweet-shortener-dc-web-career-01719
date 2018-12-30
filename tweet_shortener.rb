@@ -22,10 +22,7 @@ def word_substituter(tweet)
     tweet_a[index] = dictionary[word] if dictionary.keys.find {|key| key == word}
   end
   tweet_a.join(" ")
-  #dictionary[wrd]
 end
-
-#puts dictionary.keys.class
 
 def bulk_tweet_shortener(tweets)
 end
