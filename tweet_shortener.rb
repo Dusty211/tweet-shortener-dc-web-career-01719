@@ -16,7 +16,7 @@ def dictionary
   
 end
 
-def word_substituter(word)
+def word_substituter(tweet)
   dictionary[word]
 end
 
