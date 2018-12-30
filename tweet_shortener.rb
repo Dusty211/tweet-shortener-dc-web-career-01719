@@ -17,6 +17,7 @@ def dictionary
 end
 
 def word_substituter(tweet)
+  tweet.to_a.
   dictionary[word]
 end
 
