@@ -23,6 +23,7 @@ def word_substituter(tweet)
   puts tweet_a
   tweet_a.each_with_index do |word, index|
     tweet_a[index] = dictionary[word] if dictionary.keys.find {|key| key == word}
+    tweet_a[index] = dictionary[word.capitalize] if dictionary.keys.find {|key| key.capitalize == word}
   end
   tweet_a.join(" ")
 end
