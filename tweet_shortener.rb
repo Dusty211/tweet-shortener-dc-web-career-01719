@@ -21,7 +21,9 @@ end
 def word_substituter(tweet)
   tweet_a = tweet.split
   tweet_a.each_with_index do |word, index|
-    if 
+    if dictionary.keys.find {|key| key == word} do
+      tweet_a[index] = dictionary[word]
+    end
     #tweet_a[index] = dictionary[word] if dictionary.keys.find {|key| key == word}
     #tweet_a[index] = dictionary[word] if dictionary.keys.find {|key| key.capitalize == word}
   end
