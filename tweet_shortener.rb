@@ -17,8 +17,11 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  tweet.to_a.
-  dictionary[word]
+  tweet_a = tweet.to_a
+  tweet_a.each_with_index do |word, index|
+    
+  end
+  #dictionary[wrd]
 end
 
 def bulk_tweet_shortener(tweets)
